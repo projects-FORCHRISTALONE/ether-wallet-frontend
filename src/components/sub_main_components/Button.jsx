@@ -6,7 +6,7 @@ const Button = ({text, command,variant}) => {
     return (
         <>
             <button
-                // onClick={command}
+                onClick={command}
                 // id = "gtljc_connect_btn"
                 className={ `gtljcModularButton_1 gtljcModularButton_${variant} w-[10vh]`}
                 type="submit"
