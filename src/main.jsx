@@ -1,0 +1,13 @@
+// ALL THANKS AND GLORY TO THE AND my ONLY GOD AND LORD JESUS CHRIST ALONE
+// BY GOD'S GRACE ALONE
+
+import {createRoot} from "react-dom/client"
+import App from "./App.jsx"
+
+
+const root = createRoot(document.getElementById("root"))
+
+root.render(
+
+    <App />
+)

@@ -1,0 +1,203 @@
+/*  BY GOD'S GRACE ALONE */
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face{
+    font-family: "Inter-1";
+    src: url("./assets/Inter/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(235, 233, 233);
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column no-wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter-1";
+    animation: gtljc_body 2s linear 0s infinite normal;
+    /* color : linear-gradient(120deg, rgb(190, 82, 95),rgb(100, 169, 22) ); */
+}
+
+@keyframes gtljc_body{
+    0% {
+        background:  linear-gradient(120deg, rgb(190, 82, 95), rgb(82, 190, 118),rgb(100, 169, 22) );    
+    }
+    
+    100% {
+        background:  linear-gradient(120deg, rgb(190, 181, 82), rgb(190, 82, 105),rgb(100, 169, 22) );
+    }
+}
+
+.gtljc_main_header {
+    background-color: rgb(237, 30, 44);
+    font-size: 4vh;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0px; */
+    color: white;
+    font-weight: 800;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.gtljc_main_header img{
+    width : 20vh;
+}
+
+.gtljc_main_header img:nth-of-type(2){
+    width : 13vh;
+    filter: saturate(0)
+}
+
+.gtljc_main_header span{
+    margin-left: -5vh;
+}
+
+div.gtljc_main{
+    /* border: 2px dashed rgb(170, 170, 220); */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: beige; 
+    height: 60vh;
+    width: 60vh;
+}
+
+div.gtljc_main div.gtljc_header_left{
+    font-size: 13px;
+    font-variant: small-caps;
+    color: rgb(237,30,44);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 7px 7px;
+    align-items: baseline;
+}
+
+div.gtljc_main div.gtljc_header_left button{
+    display: inline-blo
+}
+
+div.gtljc_main div.gtljc_header_left h2{
+    margin-left: -42px
+}
+
+main{
+    position: relative;
+    padding: 0vh 2vh
+    
+}
+
+main section:nth-of-type(1) h6 {
+    /* display: flex;
+    flex-flow: column ; */
+    color: rgb(127, 49, 54);
+    font-size: 2vh;
+    margin-bottom: 2vh
+}
+
+main section:nth-of-type(1) h6 span{
+    font-style: italic;
+    color:rgb(189, 189, 189)
+}
+
+/* main section:nth-of-type(2) input{
+    width: 200px;
+    display: 
+} */
+/* 
+main section:nth-of-type(2) div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+} */
+
+main section:nth-of-type(2) div *{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20px;
+}
+
+button, input{
+    display: block;
+    margin-bottom: 2vh
+}
+
+input{
+    background-color: rgb(208, 181, 183);
+    width: 100%;
+    height: 5vh;
+    border: none;
+    box-shadow: 0px 0px 5px 2px rgb(237, 30, 44);
+    font-style: italic;
+    padding-left: 3vh
+}
+
+div.gtljc_spinner {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    width: auto;
+    flex-flow: column nowrap;
+    gap: 2vh;
+
+}
+
+div.gtljc_withdrawal gtljc_spinner{
+    align-self: center;
+    border: 3px
+}
+
+
+.gtljcModularButton_1{
+    height: 5vh;
+    width: 20vh;
+    font-weight: 800;
+    border-radius: 10px;
+    color: rgb(237,30,44);
+    border: none;
+    background-color: rgb(24, 23, 23);
+    font-variant: small-caps;
+}
+
+.gtljcModularButton_1:hover {
+    color:  rgb(24, 23, 23);
+    background-color: rgb(237,30,44);
+    border: 3px solid rgb(24, 23, 23);
+}
+
+.gtljcModularButton_2{
+    background-color: rgb(30, 189, 237);
+    color:  rgb(24, 23, 23);
+    width: 25vh;
+    font-size: 1.6vh;
+
+}
+.gtljcModularButton_2:hover{
+    background-color: rgb(24, 23, 23);
+    color:  rgb(30, 189, 237); 
+}
+
+.gtljcModularButton_1:focus {
+}
+
+
+p.gtljc_sectionTitle{
+    margin-bottom: 2vh;
+}
+
+.gtljcOval{
+    marginTop: -2vh;
+}
+
