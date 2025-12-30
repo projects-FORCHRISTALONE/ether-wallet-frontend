@@ -166,6 +166,7 @@ const MainBody = ({account, activateBrowserWallet, deactivate, chainId, currentC
                                             currentContract = {currentContract}
                                             setCurrentContract = {setCurrentContract}
                                             etherWalletGetBalance = {etherWalletGetBalance}
+                                            getBalance = {getBalance}
                                         />
                                     </div>    
                                     <input

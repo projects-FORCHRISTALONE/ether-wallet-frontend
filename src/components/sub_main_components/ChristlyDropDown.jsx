@@ -3,7 +3,7 @@
 
 import {ethers} from "ethers"
 
-const ChristlyDropDown = ({contractDetails, currentContract, setCurrentContract, etherWalletGetBalance }) => {
+const ChristlyDropDown = ({contractDetails, currentContract, setCurrentContract, etherWalletGetBalance, getBalance}) => {
     // console.log((contractDetails));
     const selectButton = (id) => {
         setCurrentContract(contractDetails[id]);
@@ -35,7 +35,7 @@ const ChristlyDropDown = ({contractDetails, currentContract, setCurrentContract,
     
     return(
         <>
-           { contractDetails &&
+           { (contractDetails||getBalance) ?
             (
                 <div className = "dropdown">
                     <div  tabIndex={0} role = "button" className="btn m-1 w-52" > Select Other Wallets</div>
@@ -43,7 +43,7 @@ const ChristlyDropDown = ({contractDetails, currentContract, setCurrentContract,
                             {contractList}
                         {/* </span> */}
                     </ul>
-                </div>)
+                </div>) : ""
             }
             
 
