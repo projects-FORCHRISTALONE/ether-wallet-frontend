@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import {ethers, Contract, utils} from "ethers";
-import EtherWallet from "../../../../backend/build/contracts/EtherWallet.json"
+import EtherWallet from "../../../contracts/EtherWallet.json"
 import {formatUnits} from "ethers/lib/utils";
 import * as Spinner from "react-loader-spinner"
 import Button from './Button';
